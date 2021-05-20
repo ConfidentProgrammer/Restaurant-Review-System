@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>View Reviews</title>
+<link rel="stylesheet" href="../CSS/styleview.css">
+</head>
+<body>
+<div class="whole-page">
+<div th:each="s : ${res}" class="review-container">
+
+<h2 th:text="${s.restaurantName}"></h2>
+<span th:text="${s.date}"></span>
+
+<span th:text="${s.time}"></span>
+<p th:text="${s.review}"></p>
+  <a th:href="@{/add}">Add a Review</a>
+</div>
+
+
+  </div>
+
+</body>
+</html>

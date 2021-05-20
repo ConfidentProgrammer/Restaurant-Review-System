@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+body,html{
+background: url("../Images/bckc.jpg");
+background-size: cover;
+height:100%;
+padding:0;
+margin:0;
+box-sizing: border-box;
+font-family: 'Open Sans Condensed', sans-serif;
+background-attachment: fixed;
+
+}
+.whole-page{
+ width:100%;
+ height:auto;
+ background:rgba(0,0,0,0.6);
+background-repeat: repeat;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: baseline;
+}
+.review-container{
+  margin-top:30px;
+  margin:10px auto;
+  padding:10px;
+  width:500px;
+  background: rgba(220,20,60,0.3)	;
+  text-align: center;
+  height:calc(auto + 40px);
+  color:white;
+
+}
+h2{
+  margin: 0;
+  font-size:3rem;
+}
+p{
+
+  font-size:1.7rem;
+}
+a{
+  text-decoration:none;
+   color:white;
+   width:200px;
+   font-size: 1.2rem;
+ padding:10px 1.2em;
+ background: black;
+ color:white;
+ font-size:1.3rem;
+ transition: .2s;
+
+}
+a:hover{
+  background: rgba(220,20,60,0.3)	;
+ cursor: pointer;
+}

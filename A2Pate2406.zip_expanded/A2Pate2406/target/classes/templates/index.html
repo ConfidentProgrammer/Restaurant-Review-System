@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Restaurant reviews</title>
+<link rel="stylesheet" href="../CSS/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+
+<div class="whole-page">
+  <div class="slogan-container">
+    <h1 class="heading">We all need people who will give us <span>feedback</span>. That’s how we improve...</h1>
+  </div>
+  <div class="form">
+    <h2 class="icon"><i class="fas fa-utensils"></i></h2>
+    <h2 class="form-heading">Add a Review</h2>
+    <form th:action="@{/}" th:method="post" th:object="${res}">
+   <table >
+     <tr>
+       <td><p>Restaurant Name</p><input type="text" th:field="*{restaurantName}">
+</td>
+     </tr>
+
+     <tr>
+       <td>
+         <p>Date</p><input type="date" th:field="*{date}">
+
+       </td>
+     </tr>
+     <tr>
+       <td>
+         <p>Time</p><input type="time" th:field="*{time}">
+       </td>
+     </tr>
+     <tr>
+       <td>
+         <p>Review</p><input type="text" th:field="*{review}">
+       </td>
+     </tr>
+     <tr>
+       <td>
+         <input type="submit" value="Submit Your Review">
+
+  <a th:href="@{/}">View All Reviews</a>
+       </td>
+     </tr>
+   </table>
+    </form>
+
+
+  </div>
+</div>
+
+
+</body>
+</html>
